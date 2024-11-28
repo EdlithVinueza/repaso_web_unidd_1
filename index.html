@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Juego Pokémon</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="texto-inicia">
+                <h1 id="puntaje">Puntaje: 0</h1> 
+                <h2 id="intentos">Intentos: 0</h2>
+            </div>
+
+            <div class="imagen-inicial">
+                <img id="imagen-pokemon" src="img/pnegro.jpg" alt="imagen de Pokemon">
+            </div>
+
+            <div class="botones-iniciales">
+                <button onclick="seleccionarOpcion('keldeo-ordinary')">keldeo-ordinary</button>
+                <button onclick="seleccionarOpcion('dribur')">dribur</button>
+                <button onclick="seleccionarOpcion('ninjask')">ninjask</button>
+                <button onclick="seleccionarOpcion('excadrill')">excadrill</button>
+            </div>
+
+            <div id="mensaje"></div>
+
+            <button id="reiniciar" onclick="reiniciarJuego()">Reiniciar Juego</button>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
